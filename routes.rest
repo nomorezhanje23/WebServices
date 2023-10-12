@@ -1,0 +1,40 @@
+//LOCALHOST
+###Get all the contacts
+GET http://localhost:3000/contacts1
+
+
+###Get contact by Id
+GET http://localhost:3000/contacts1/6525b380900c1c5977d0d607
+
+
+### Create a new contact
+POST http://localhost:3000/contacts1 HTTP/1.1
+content-type: application/json
+
+{
+    "email": "Timbex@outlook.com",
+    "username": "President",
+    "name": "Snipes",
+    "lastName": "Timbula",
+    "favoriteColor": "Black",
+    "birthday": "15/03/98",
+    "ipaddress": "0.0.0.0/0"
+}
+
+### PUT Contact will update Vale's info
+PUT http://localhost:3000/contacts1/6525b3cd900c1c5977d0d608 HTTP/1.1
+content-type: application/json
+
+{
+    "email": "MumuUpdate@outlook.com",
+    "username": "Branline",
+    "name": "Musa",
+    "lastName": "Brooks",
+    "favoriteColor": "Purple",
+    "birthday": "15/03/90",
+    "ipaddress": "0.0.0.0/0"
+}
+
+### DELETE contact using the id number in this case its Zim
+DELETE http://localhost:3001/contacts1/6527242fe9be28b9d5772c33
+
